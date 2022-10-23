@@ -1,0 +1,11 @@
+data:
+  dataset: 'proteus'
+  train_path: '../data/TransProteus/{}/Training/{}'
+  train_seqs: ['FlatSurfaceLiquids', 'LiquidContent', 'ObjectContent', 'SingleObjectContent']
+  train_views: [1, 2, 3, 4, 5, 6, 7, 8]
+
+  val_path: '../data/TransProteus/{}/Testing/{}'
+  val_seqs: ['FlatSurfaceLiquids', 'LiquidContent', 'ObjectContent', 'SingleObjectContent']
+  val_views: [1, 2, 3, 4, 5, 6, 7, 8]
+
+  num_workers: 14

@@ -1,0 +1,11 @@
+matplotlib
+numpy
+Pillow
+PyYAML
+scipy
+timm
+torch
+torchmetrics
+torchinfo
+torchvision
+einops

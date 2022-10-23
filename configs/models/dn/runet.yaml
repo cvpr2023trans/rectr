@@ -1,0 +1,19 @@
+model:
+  name: 'RUNet'
+
+  # Hyperparameters
+  mu: 1.0         # weight of the depth term in L_D
+  kappa: 10.0      # weight of the direction term in LN
+  tau: 1.0        # weight of the magnitude term in L_N
+  eta: 0.0        # weight of the edges term in L_D and L_N
+
+  # Input and output
+  output_depth: True
+  output_normals: True
+  output_xyz: False
+
+  # Loss functions
+  w_depth: 1.0    # weight of L_D in L
+  w_normals: 1.0  # weight of L_N in L
+  w_xyz: 0.0      # weight of L_XYZ in L
+  w_mask: 0.1     # weight of L_M in L

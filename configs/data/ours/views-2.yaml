@@ -1,0 +1,33 @@
+# Model
+################################################################################
+input_size: [ 3, 224, 224 ]
+kappa: 10.0
+w_depth: 1.0
+w_normals: 1.0
+
+# Training
+################################################################################
+batch_size: 32
+epochs: 100
+learning_rate: 0.001
+weight_decay: 0.0001
+checkpoint_path: './results/trans/views-2'
+
+# Dataset
+################################################################################
+dataset: 'trans'
+
+train_data: '../data/trans/'
+train_mult: true
+train_seqs: [ 'christmas', 'countryhall', 'fireplace', 'studio', ]
+train_views: [ '45', '60', '75', '90', '105', '135' ]
+
+val_data: '../data/trans/'
+val_mult: true
+val_seqs: [ 'bedroom' ]
+val_views: [ '120' ]
+
+test_data: '../data/trans/'
+test_mult: true
+test_seqs: [ 'bedroom' ]
+test_views: [ '120' ]

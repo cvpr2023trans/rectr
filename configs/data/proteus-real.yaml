@@ -1,0 +1,3 @@
+data:
+  dataset: 'proteus_real'
+  test_path: '../data/TransProteus/real/'

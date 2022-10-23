@@ -1,0 +1,25 @@
+model:
+  name: 'SRVT-Transformer-NoEdge'
+
+  # Architecture
+  mask_encoder: 'vit_tiny_patch16_224'
+  mask_decoder: 'transformer'
+  backbone: 'segnet'
+  use_shortcut: True
+
+  # Hyperparameters
+  mu: 1.0         # weight of the depth term in L_D
+  kappa: 1.0      # weight of the direction term in LN
+  tau: 0.1        # weight of the magnitude term in L_N
+  eta: 0.0        # weight of the edges term in L_D and L_N
+
+  # Input and output
+  output_depth: True
+  output_normals: True
+  output_xyz: False
+
+  # Loss functions
+  w_depth: 1.0    # weight of L_D in L
+  w_normals: 1.0  # weight of L_N in L
+  w_xyz: 0.0      # weight of L_XYZ in L
+  w_mask: 1.0     # weight of L_M in L

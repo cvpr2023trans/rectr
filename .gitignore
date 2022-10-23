@@ -1,0 +1,40 @@
+# IntelliJ and VSCode files
+.idea
+.vscode
+.vscode-workspace
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+dist/
+
+# Cache and downloaded files
+.cache/
+download/
+
+# Virtualenv
+.env
+.venv
+env/
+venv/
+
+# Logs
+logs/
+reports/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Training output (model files, checkpoints, logs)
+checkpoints/
+output/
+
+# Bash scripts
+*.sh
+
+# OS generated files
+.DS_Store

@@ -1,0 +1,27 @@
+# Model and Loss Function
+################################################################################
+input_size: [ 3, 224, 224 ]
+
+w_depth: 1.0    # weight of L_D in L
+w_normals: 1.0  # weight of L_N in L
+w_mask: 1.0     # weight of L_M in L
+mu: 10.0        # weight of the depth term in L_D
+eta: 1.0        # weight of the edges term in L_D and L_N
+kappa: 10.0     # weight of the direction term in L_N
+tau: 1.0        # weight of the magnitude term in L_N
+
+
+# Training
+################################################################################
+batch_size: 32
+epochs: 50
+learning_rate: 0.001
+weight_decay: 0.0001
+checkpoint_path: './results/transproteus/liquid/'
+
+
+# Data
+################################################################################
+dataset: 'transproteus'
+train_data: '../data/TransProteus/1/Training/LiquidContent'
+val_data: '../data/TransProteus/1/Testing/LiquidContent'
